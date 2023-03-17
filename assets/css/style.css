@@ -1,5 +1,17 @@
-body {
-  background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*hiding the start button on click*/
+.hide {
+  display: none;
 }
 
 header {
@@ -17,13 +29,71 @@ header a {
   text-decoration: none;
 }
 
+.main-header {
+  margin: 25px 0 45px;
+  text-align: center;
+  padding: 50px;
+}
+
 main {
   margin: 10%;
   width: auto;
   height: auto;
 }
 
-main h1 {
+card-wrap #start,
+.card-wrap #save {
+  padding: 10px 0;
+  min-width: 250px;
+  font-size: 1rem;
+  background-color: #12493a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-wrap #start:hover {
+  background-color: rgb(109, 81, 45);
+}
+
+.card-display {
+  padding: 25px;
+  border: 1px solid #aaa;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-display #question-display {
+  margin-bottom: 15px;
+}
+
+.card-display #timer-display {
+  font-size: 2rem;
+}
+
+.card-display #answer-display {
+  background-color: #00cd30;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card-display #next {
+  padding: 5px 35px;
+  font-size: 0.9rem;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.card-display #next:hover {
+  background-color: rgb(185, 115, 185);
+}
+/* main h1 {
   display: flex;
   justify-content: center;
   width: auto;
@@ -35,6 +105,11 @@ section {
   height: auto;
   width: 100%;
 }
+
+#start-button {
+  background-color: green;
+}
+*/
 
 .buttonStyles {
   background-color: purple;

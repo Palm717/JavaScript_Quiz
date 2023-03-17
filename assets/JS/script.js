@@ -1,6 +1,13 @@
 var countdown = document.querySelector(".timer");
 var secondsLeft = 180;
 var newStyle = document.querySelectorAll("button");
+var cardDisplay = document.querySelector(".card-display");
+var startBtn = document.querySelector("#start");
+var saveBtn = document.querySelector("#save");
+var questionDisplay = document.querySelector("#question-display");
+var timerDisplay = document.querySelector("#timer-display");
+var answerDisplay = document.querySelector("#answer-display");
+var nextBtn = document.querySelector("#next");
 
 function quizCountdown() {
   var quizTimer = setInterval(function () {
